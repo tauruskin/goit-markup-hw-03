@@ -17,7 +17,7 @@ html {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
     outline: 2px solid turquoise;
 }
 
@@ -251,6 +251,15 @@ ul {
 }
 
 /* Портфолио */
+.gallery-list .link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.gallery-list .link:hover,
+.gallery-list .link:focus {
+    color: var(--accent-color);
+}
 
 button {
     font-family: inherit;
@@ -265,14 +274,24 @@ button:focus {
     color: var(--tittle-text-color);
 }
 
-.gallery-list .link {
-    text-decoration: none;
-    color: var(--primary-text-color);
+.container-list {
+    display: flex;
+    margin-right: 8px;
+
 }
 
-.gallery-list .link:hover,
-.gallery-list .link:focus {
-    color: var(--accent-color);
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-list .element {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.gallery-list .element:nth-child(3n) {
+    margin-right: 0;
 }
 
 .gallery-tittle {
@@ -287,7 +306,7 @@ button:focus {
     color: var(--accent-color);
 }
 
-.gallery-description {
+.gallery-desc {
     font-size: 16px;
     line-height: 1.87;
 }
