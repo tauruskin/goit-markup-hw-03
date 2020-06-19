@@ -24,7 +24,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 2px solid turquoise;
+    /* outline: 2px solid turquoise; */
 }
 
 .main-nav {
@@ -180,7 +180,7 @@ ul {
 /* Features */
 
 .section-tittle.invisible {
-    visibility: hidden;
+    display: none;
 }
 
 .section-tittle {
@@ -193,6 +193,13 @@ ul {
     text-align: center;
 }
 
+.features {
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .features .tittle {
     color: var(--tittle-text-color);
     font-size: 14px;
@@ -202,7 +209,6 @@ ul {
 
 .features .text {
     margin-top: 0;
-    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -214,6 +220,56 @@ ul {
 .specification:hover,
 .specification:focus {
     color: var(--accent-color);
+}
+
+.container .features li {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Duties */
+
+.container.duties {
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+}
+
+.duties-list {
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 94px; */
+}
+
+.container .duties-list li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Team  */
+
+.team .section-tittle {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container.team {
+    display: flex;
+    align-content: center;
+    width: 1600px;
+    background: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 702px;
+}
+
+.container .team-list li {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name-list {
@@ -230,6 +286,22 @@ ul {
 .team-social:hover,
 .team-social:focus {
     color: var(--accent-color);
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+}
+
+.container .clients li {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 94px;
+}
+
+.footer {
+    display: flex;
 }
 
 .footer-contacts .link {
@@ -278,10 +350,14 @@ button:focus {
 
 .container-list {
     display: flex;
-    margin-right: 8px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     justify-content: center;
-
 }
+
+/* .container-list.button {
+    margin-left: 8px;
+} */
 
 .gallery-list {
     display: flex;
@@ -291,6 +367,11 @@ button:focus {
 .gallery-list .element {
     width: 370px;
     margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+.element .link img {
+    align-items: center;
 }
 
 .gallery-list .element:nth-child(3n) {
