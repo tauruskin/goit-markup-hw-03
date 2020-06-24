@@ -21,6 +21,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
+    box-sizing: content-box
 }
 
 .container {
@@ -29,7 +30,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    display: flex;
+   
     /* outline: 2px solid turquoise; */
 }
 
@@ -50,6 +51,7 @@ body {
     letter-spacing: 0.03em;
     background: #FFFFFF;
     color: var(--primary-text-color);
+    margin: 0;
 }
 
 ul {
@@ -57,7 +59,9 @@ ul {
     padding: 0;
     list-style: none;
 }
-
+ p {
+     margin-top: 0;
+ }
 /* Layout */
 
 .layout-section {
@@ -109,9 +113,12 @@ ul {
     display: flex;
     margin-left: auto;
     align-items: baseline;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .navigation__logo {
+    padding: 0;
     display: flex;
     align-items: center;
     /* margin-left: 215px; */
@@ -124,7 +131,6 @@ ul {
 
 .navigation__list {
     display: flex;
-    margin-left: 85px;
 
     font-weight: 500;
     font-size: 14px;
@@ -156,6 +162,7 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-left: 305px;
+    
 }
 
 .contacts-nav__link {
@@ -196,6 +203,8 @@ ul {
 }
 
 .container-list__tittle {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 700;
     color: var(--tittle-text-color);
     font-size: 14px;
@@ -204,7 +213,7 @@ ul {
 }
 
 .container-list__text {
-    margin-top: 0;
+    margin: 0;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -223,9 +232,8 @@ ul {
     height: 120px;
     background-color: #F5F4FA;
     justify-content: center;
-    
+    margin: 0;
     border-radius: 4px;
-    margin-bottom: 30px;
     display: flex;
     /* align-items: center;
     justify-content: center */
@@ -266,6 +274,15 @@ ul {
 .container-block__item {
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
 }
 .container-block__list-link{
     text-decoration: none;
@@ -340,7 +357,10 @@ ul {
 .mail-send__item {
     /* color: #FFFFFF; */
 }
-
+.container {
+    padding: 0;
+    
+}
 .container-block__list-text {
     color: #FFFFFF;
     font-size: 14px;
