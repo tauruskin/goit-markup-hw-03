@@ -2,93 +2,114 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Студия</title>
+        rel="stylesheet" />
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home</title>
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container main-nav">
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container__main-nav">
             <nav class="navigation">
-                <a href="./index.html" class="logo"> Web Studio
-                    <!-- <img src="./img/web-studio.svg" alt="Web Studio"> -->
-                </a>
-
-                <ul class="site-nav">
-                    <li class="item"> <a href="./index.html" class="link current"> Студия</a></li>
-                    <li class="item"> <a href="./portfolio.html" class="link"> Портфолио</a></li>
-                    <li class="item"> <a href="" class="link"> Контакты </a></li>
+                <div class="navigation__logo">
+                    <img src="./img/web-studio.svg" alt="Web Studio" />
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="./index.html" class="navigation__link">
+                            Студия
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="./portfolio.html" class="navigation__link">
+                            Портфолио
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link">
+                            Контакты
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div class="contacts-block">
                 <ul class="contacts-nav">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="link">
-                            <img src="./img/envelope.svg" alt="" class="nav-image">
+                    <li class="contacts-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-nav__link">
+                            <img src="./img/envelope.svg" alt="" class="contacts-nav__image" />
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="item">
-                        <a href="tel:380961111111" class="link">
-                            <img src="./img/phone.svg" alt="" class="nav-image">
-                            +38 096 111 11 11
+                    <li class="contacts-nav__item">
+                        <a href="tel:380961111111" class="contacts-nav__link">
+                            <img src="./img/phone.svg" alt="" class="contacts-nav__image" />
+                            <span>+38 096 111 11 11</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-
     </header>
     <main class="layout">
-
         <section class="layout-section">
-            <h1 class="section-tittle">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="layout-section__tittle">
+                Эффективные решения для вашего бизнеса
+            </h1>
             <a href="" class="button primary">Заказать услугу</a>
         </section>
-
-        <!--Особенности-->
+        <!-- Особенности -->
         <section class="section">
             <div class="container">
-                <h2 class="section-tittle invisible">Особенности</h2>
-                <ul class="features">
-                    <li class="list">
-                        <div class="list-image">
+                <!-- <h2 class="section-tittle invisible">Особенности</h2> -->
+                <ul class="container-list">
+                    <li class="container-list__item">
+                        <div class="container-list__image">
                             <img src="./img/features/antenna.svg" alt="Антена" />
                         </div>
-                        <h3 class="tittle">Внимание к деталям</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        <p class="container-list__tittle">Внимание к деталям</p>
+                        <p class="container-list__text">
+                            Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.
                         </p>
                     </li>
-                    <li class="list">
-                        <div class="list-image">
+                    <li class="container-list__item">
+                        <div class="container-list__image">
                             <img src="./img/features/clock.svg" alt="Часы" />
                         </div>
-                        <h3 class="tittle">Пунктуальность</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за
-                            собой.
+                        <p class="container-list__tittle">Пунктуальность</p>
+                        <p class="container-list__text">
+                            Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="list">
-                        <div class="list-image">
+                    <li class="container-list__item">
+                        <div class="container-list__image">
                             <img src="./img/features/diagram.svg" alt="Диаграма" />
                         </div>
-                        <h3 class="tittle">Планирование</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени
-                            обуславливает.
+                        <p class="container-list__tittle">Планирование</p>
+                        <p class="container-list__text">
+                            Равным образом консультация с широким активом в значительной
+                            степени обуславливает.
                         </p>
                     </li>
-                    <li class="list">
-                        <div class="list-image">
+                    <li class="container-list__item">
+                        <div class="container-list__image">
                             <img src="./img/features/astronaut.svg" alt="Астронавт" />
                         </div>
-                        <h3 class="tittle">Современные технологии</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="container-list__tittle">Современные технологии</p>
+                        <p class="container-list__text">
+                            Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -96,103 +117,127 @@
 
         <!--Чем мы занимаемся-->
         <section class="section">
-            <div class="container duties">
-                <h2 class="section-tittle">Чем мы занимаемся</h2>
-                <ul class="duties-list">
-                    <li>
-                        <img src="./img/duties/desktop.jpg" alt="Десктопные приложения" width="370" height="294" />
-                        <a href="" class="specification">Десктопные приложения</a>
+            <div class="container-block">
+                <h2 class="container-block__tittle">Чем мы занимаемся</h2>
+                <ul class="container-block__list">
+                    <li class="container-block__item">
+                        <img src="./img/duties/desktop.jpg" alt="Десктопные приложения" width="370" />
+                        Десктопные приложения
                     </li>
-                    <li>
-                        <img src="./img/duties/mobile-phone.jpg" alt="Мобильный" width="370" height="294" />
-                        <a href="" class="specification">Мобильные приложения</a>
+                    <li class="container-block__item">
+                        <img src="./img/duties/mobile-phone.jpg" alt="Мобильный" width="370" />
+                        Мобильные приложения
                     </li>
-                    <li>
-                        <img src="./img/duties/design.jpg" alt="Дизайн" width="370" height="294" />
-                        <a href="" class="specification">Дизайнерские решения</a>
+                    <li class="container-block__item">
+                        <img src="./img/duties/design.jpg" alt="Дизайн" width="370" />
+                        Дизайнерские решения
                     </li>
                 </ul>
             </div>
         </section>
 
         <!--Наша команда-->
-        <section class="section our-team">
-            <div class="container team">
-                <h2 class="section-tittle">Наша команда</h2>
-                <ul class="team-list">
-                    <li>
-                        <img src="./img/team/kucherenko.jpg" alt="Кучеренко" />
+        <section class="section__part">
+            <div class="container-block">
+                <h2 class="container-block__tittle">Наша команда</h2>
+                <ul class="container-block__list">
+                    <li class="container-block__item">
+                        <div>
+                            <img src="./img/team/kucherenko.jpg" alt="Кучеренко" />
+                        </div>
                         <h3 class="name-list">Николай Кучеренко</h3>
                         <p>Product Designer</p>
-                        <ul>
+                        <ul class="socials">
                             <li>
-                                <a href="" class="team-social">Instagram</a>
+                                1
+                                <!-- <a href="" class="team-social">Instagram</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Twitter</a>
+                                2
+                                <!-- <a href="" class="team-social">Twitter</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Facebook</a>
+                                3
+                                <!-- <a href="" class="team-social">Facebook</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Linkedin</a>
+                                4
+                                <!-- <a href="" class="team-social">Linkedin</a> -->
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./img/team/ivanova.jpg" alt="Иванова" width="270" height="260" />
+                    <li class="container-block__item">
+                        <div>
+                            <img src="./img/team/ivanova.jpg" alt="Иванова" />
+                        </div>
                         <h3 class="name-list">Ольга Иванова</h3>
                         <p>Frontend Developer</p>
-                        <ul>
+                        <ul class="socials">
                             <li>
-                                <a href="" class="team-social">Instagram</a>
+                                1
+                                <!-- <a href="" class="team-social">Instagram</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Twitter</a>
+                                2
+                                <!-- <a href="" class="team-social">Twitter</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Facebook</a>
+                                3
+                                <!-- <a href="" class="team-social">Facebook</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Linkedin</a>
+                                4
+                                <!-- <a href="" class="team-social">Linkedin</a> -->
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./img/team/shevchenko.jpg" alt="Шевченко" width="270" height="260" />
+                    <li class="container-block__item">
+                        <div>
+                            <img src="./img/team/shevchenko.jpg" alt="Шевченко" width="270" height="260" />
+                        </div>
                         <h3 class="name-list">Андрей Шевченко</h3>
                         <p>Marketing</p>
-                        <ul>
+                        <ul class="socials">
                             <li>
-                                <a href="" class="team-social">Instagram</a>
+                                1
+                                <!-- <a href="" class="team-social">Instagram</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Twitter</a>
+                                2
+                                <!-- <a href="" class="team-social">Twitter</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Facebook</a>
+                                3
+                                <!-- <a href="" class="team-social">Facebook</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Linkedin</a>
+                                4
+                                <!-- <a href="" class="team-social">Linkedin</a> -->
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./img/team/nikolaev.jpg" alt="Николаев" width="270" height="260" />
+                    <li class="container-block__item">
+                        <div>
+                            <img src="./img/team/nikolaev.jpg" alt="Николаев" width="270" height="260" />
+                        </div>
                         <h3 class="name-list">Иван Николаев</h3>
                         <p>UI Designer</p>
-                        <ul>
+                        <ul class="socials">
                             <li>
-                                <a href="" class="team-social">Instagram</a>
+                                1
+                                <!-- <a href="" class="team-social">Instagram</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Twitter</a>
+                                2
+                                <!-- <a href="" class="team-social">Twitter</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Facebook</a>
+                                3
+                                <!-- <a href="" class="team-social">Facebook</a> -->
                             </li>
                             <li>
-                                <a href="" class="team-social">Linkedin</a>
+                                4
+                                <!-- <a href="" class="team-social">Linkedin</a> -->
                             </li>
                         </ul>
                     </li>
@@ -201,35 +246,35 @@
         </section>
         <!--Постоянные клиенты-->
         <section class="section">
-            <div class="container">
-                <h2 class="section-tittle">Постоянные клиенты</h2>
-                <ul class="clients">
-                    <li>
+            <div class="container-block">
+                <h2 class="container-block__tittle">Постоянные клиенты</h2>
+                <ul class="container-block__list">
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-1.svg" alt="Лого 1" />
                         </a>
                     </li>
-                    <li>
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-2.svg" alt="Лого 2" />
                         </a>
                     </li>
-                    <li>
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-3.svg" alt="Лого 3" />
                         </a>
                     </li>
-                    <li>
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-4.svg" alt="Лого 4" />
                         </a>
                     </li>
-                    <li>
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-5.svg" alt="Лого 5" />
                         </a>
                     </li>
-                    <li>
+                    <li class="container-block__item">
                         <a href="">
                             <img src="./img/logo/logo-6.svg" alt="Лого 6" />
                         </a>
@@ -240,40 +285,57 @@
     </main>
     <!--Футер-->
     <footer class="footer-section">
-        <div class="container footer">
-            <a href="" class="logo"> Web Studio
-                <!-- <img src="./img/web-studio.svg" alt="Web Studio"> -->
-            </a>
-            <ul class="footer-contacts">
-                <li>
-                    <a href="" class="link"> г. Киев, пр-т Леси Украинки, 26 </a>
-                </li>
-                <li>
-                    <a href="" class="link"> info@example.com </a>
-                </li>
-                <li>
-                    <a href="" class="link"> +38 099 111 11 11 </a>
+        <div class="container-footer">
+            <ul class="container-block__list">
+                <li class="container-block__list-item">
+                    <div class="container-footer__logo">
+                        <img src="./img/web-studio-white.svg" alt="Web Studio" />
+                    </div>
+                    <address class="container-block__list-text">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </address>
+                    <a href="info@example.com" class="link"> info@example.com </a>
+                    <a href="+380991111111" class="link"> +38 099 111 11 11 </a>
                 </li>
             </ul>
-            <p>Присоединяйтесь</p>
-            <ul class="social">
-                <li>
-                    <a href="" class="link">Instagram</a>
-                </li>
-                <li>
-                    <a href="" class="link">Twitter</a>
-                </li>
-                <li>
-                    <a href="" class="link">Facebook</a>
-                </li>
-                <li>
-                    <a href="" class="link">Linkedin</a>
-                </li>
-            </ul>
-            <p>Подпишитесь на рассылку</p>
+            <div class="footer-form">
+                <b class="footer-form__text">Присоединяйтесь</b>
+                <ul class="socials">
+                    <li class="socials__item">
+                        1
+                        <!-- <a href="" class="link">Instagram</a> -->
+                    </li>
+                    <li class="socials__item">
+                        2
+                        <!-- <a href="" class="link">Twitter</a> -->
+                    </li>
+                    <li class="socials__item">
+                        3
+                        <!-- <a href="" class="link">Facebook</a> -->
+                    </li>
+                    <li class="socials__item">
+                        4
+                        <!-- <a href="" class="link">Linkedin</a> -->
+                    </li>
+                </ul>
 
-            <a href="" class="button primary">Подписаться</a>
-            <p>2020 | Developed by GoIT Students</p>
+            </div>
+
+            <div class="mail-send">
+                <b class="mail-send__text-bold">Подпишитесь на рассылку</b>
+                <form action="/" class="mail-send__form"></form>
+                <div class="mail-send__item">
+                    <input type="email" class="mail-send__input" placeholder="email" />
+                </div>
+                <div class="mail-send__item">
+                    <input type="submit" class="mail-send__submit" id="submit" />
+
+                </div>
+
+            </div>
+            <div class="subscribe">
+                <p class="subscribe__text">Подписаться</p>
+            </div>
         </div>
     </footer>
 </body>
