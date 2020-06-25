@@ -17,44 +17,46 @@
 
 <body>
     <header class="header">
-        <div class="container__main-nav">
-            <nav class="navigation">
-                <div class="navigation__logo">
-                    <img src="./img/web-studio.svg" alt="Web Studio" />
-                </div>
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link">
-                            Студия
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link">
-                            Портфолио
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contacts-block">
-                <ul class="contacts-nav">
-                    <li class="contacts-nav__item">
-                        <a href="mailto:info@devstudio.com" class="contacts-nav__link">
-                            <img src="./img/envelope.svg" alt="" class="contacts-nav__image" />
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="contacts-nav__item">
-                        <a href="tel:380961111111" class="contacts-nav__link">
-                            <img src="./img/phone.svg" alt="" class="contacts-nav__image" />
-                            <span>+38 096 111 11 11</span>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="container__main-nav">
+                <nav class="navigation">
+                    <div class="navigation__logo">
+                        <img src="./img/web-studio.svg" alt="Web Studio" />
+                    </div>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="./index.html" class="navigation__link">
+                                Студия
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./portfolio.html" class="navigation__link">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts-block">
+                        <ul class="contacts-nav">
+                            <li class="contacts-nav__item">
+                                <a href="mailto:info@devstudio.com" class="contacts-nav__link">
+                                    <img src="./img/envelope.svg" alt="" class="contacts-nav__image" />
+                                    <span>info@devstudio.com</span>
+                                </a>
+                            </li>
+                            <li class="contacts-nav__item">
+                                <a href="tel:380961111111" class="contacts-nav__link">
+                                    <img src="./img/phone.svg" alt="" class="contacts-nav__image" />
+                                    <span>+38 096 111 11 11</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -191,10 +193,13 @@
                         <img src="./img/web-studio-white.svg" alt="Web Studio" />
                     </div>
                     <address class="container-block__list-text">
-                        г. Киев, пр-т Леси Украинки, 26
+                        <span>г. Киев, пр-т Леси Украинки, 26</span>
                     </address>
-                    <a href="info@example.com" class="link"> info@example.com </a>
-                    <a href="+380991111111" class="link"> +38 099 111 11 11 </a>
+                    <a href="info@example.com" class="container-block__list-link">
+                        <span>info@example.com</span>
+                        <a href="+380991111111" class="container-block__list-link">
+                            <span>+38 099 111 11 11</span>
+                        </a>
                 </li>
             </ul>
             <div class="footer-form">
@@ -217,7 +222,6 @@
                         <!-- <a href="" class="link">Linkedin</a> -->
                     </li>
                 </ul>
-
             </div>
 
             <div class="mail-send">
@@ -228,9 +232,7 @@
                 </div>
                 <div class="mail-send__item">
                     <input type="submit" class="mail-send__submit" id="submit" />
-
                 </div>
-
             </div>
             <div class="subscribe">
                 <p class="subscribe__text">Подписаться</p>
