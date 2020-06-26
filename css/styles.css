@@ -67,8 +67,6 @@ p {
   max-width: 1920px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -78,16 +76,22 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.layout.block {
+  text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .layout-section__tittle {
   /* background-color: teal; */
   color: #ffffff;
+  width: 700px;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -115,9 +119,9 @@ p {
   color: var(--accent-color);
 }
 
-/* .navigation__link current {
-    color: var(--accent-color);
-} */
+.navigation__link .current {
+  color: var(--accent-color);
+}
 
 .navigation {
   display: flex;
@@ -458,7 +462,6 @@ p {
 /* Портфолио */
 
 .section-part {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
